@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manter Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="cadastrar_form">
+
+        <h1 id="title_form">Cadastrar Cliente</h1>
+        <form action="http://localhost:83/app/index.php" method="POST" id="CadCli">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado"><br><br>
+            <div id="divbotao">
+                <button type="button" id="btnCreate">Enviar</button>
+            </div>
+            <p id="mCreate"></p>
+        </form>
+
+    </div>
+
+    <br>
+
+    <h1 id="title_form">Consultar Todos os Cliente</h1>
+    <table id="tabelaClientes"></table>
+    <p id="mRead"></p>
+
+    <br>
+    
+    <h1 id="title_form">Consultar Um Cliente</h2>
+    <form id="formUpdate">
+        <input type="number" name="cliente_id_search" id="cliente_id_search">
+        <div id="divbotao">
+            <button type="button" id="btnSearch">Pesquisar</button>
+        </div>
+        <table id="tabelaCliente"></table>
+    </form>
+    <p id="mSearch"></p>
+    
+    <br>
+
+    <h1 id="title_form">Alterar Cliente</h1>
+    <form>
+        <input type="number" name="cliente_id_update" id="cliente_id_update">
+        <div id="divbotao">
+            <button type="button" id="btnUpdateSearch">Encontrar</button>
+        </div>
+        <div id="clienteData"></div>
+        <div id="divbotao">
+            <button type="button" id="btnUpdate">Alterar</button>
+        </div>
+    </form>
+    <p id="mUpdate"></p>
+
+    <br>
+
+    <h1 id="title_form">Deletar Cliente</h1>
+    <form>
+        <input type="number" name="cliente_id_delete" id="cliente_id_delete">
+        <div id="divbotao">
+            <button type="button" id="btnDeletee">Deletar</button>
+        </div>
+    </form>
+    <p id="mDeletee"></p>
+
+    <script src="public/js/create.js" ></script>
+    <script src="public/js/read.js"></script>
+    <script src="public/js/search.js"></script>
+    <script src="public/js/deletee.js"></script>
+    <script src="public/js/update.js"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>

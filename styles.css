@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #fff;
+    padding: 2vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+button[type="button"] {
+    padding: 10px 15px;
+    background-color: rgb(36, 141, 211);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button[type="button"]:hover {
+    background-color: #87c5ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+#clienteData {
+    margin-top: 20px;
+}
+
+#mCreate, #mRead, #mSearch, #mUpdate, #mDeletee {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+/* AAAAAAAA */
+
+#title_form
+{
+    text-align: center;
+}
+
+#divbotao
+{ 
+    position: relative;
+    text-align: center;
+}
